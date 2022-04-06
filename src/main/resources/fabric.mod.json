@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "clutter",
+  "version": "${version}",
+
+  "name": "Clutter",
+  "description": "This is my first mod so I decided that a mod with random stuff in it would be a great way to learn",
+  "authors": [
+    "HandsomeDuck"
+  ],
+  "contact": {
+
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/clutter/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.handsomeduck.clutter.Clutter"
+    ],
+    "client": [
+      "net.handsomeduck.clutter.ClutterClient"
+    ]
+  },
+  "mixins": [
+    "clutter.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

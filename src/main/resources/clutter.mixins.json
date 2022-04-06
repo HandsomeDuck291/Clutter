@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.handsomeduck.clutter.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+  ],
+  "client": [
+    "ClutterMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
