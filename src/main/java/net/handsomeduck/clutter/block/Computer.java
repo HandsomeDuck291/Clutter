@@ -32,9 +32,4 @@ public class Computer extends Block implements BlockEntityProvider {
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
         return new ComputerEntity(pos, state);
     }
-
-    @Override
-    public BlockRenderType getRenderType(BlockState state) {
-        return BlockRenderType.ENTITYBLOCK_ANIMATED;
-    }
 }
