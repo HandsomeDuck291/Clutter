@@ -1,7 +1,8 @@
 {
-  "itemGroup.clutter.clut": "Clutter",
+  "itemGroup.clutter.clutter": "Clutter",
   "item.clutter.ruby": "Ruby",
   "block.clutter.ruby_ore": "Ruby Ore",
   "block.clutter.comp": "Computer",
-  "entity.clutter.fairy": "Fairy"
+  "entity.clutter.fairy": "Fairy",
+  "item.clutter.fairy_spawn_egg": "Fairy Spawn Egg"
 }

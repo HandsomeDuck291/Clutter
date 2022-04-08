@@ -1,6 +1,7 @@
 {
   "parent": "builtin/entity",
   "textures": {
-    "all": "clutter:blockentity/computer/computer"
+    "1": "clutter:blockentity/computer/computer",
+    "particle": "clutter:blockentity/computer/computer"
   }
 }

@@ -14,6 +14,7 @@ import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 public class ComputerEntity extends BlockEntity implements IAnimatable {
     private final AnimationFactory factory = new AnimationFactory(this);
+
     public ComputerEntity(BlockPos pos, BlockState state) {
         super(Clutter.COMPUTER, pos, state);
     }
