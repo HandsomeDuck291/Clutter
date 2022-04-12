@@ -1,6 +1,7 @@
 package net.handsomeduck.clutter.block.BlockEntity;
 
 import net.handsomeduck.clutter.Clutter;
+import net.handsomeduck.clutter.registry.TileRegistry;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.util.math.BlockPos;
@@ -16,7 +17,7 @@ public class ComputerEntity extends BlockEntity implements IAnimatable {
     private final AnimationFactory factory = new AnimationFactory(this);
 
     public ComputerEntity(BlockPos pos, BlockState state) {
-        super(Clutter.COMPUTER, pos, state);
+        super(TileRegistry.COMPUTER_TILE, pos, state);
     }
 
     private <E extends IAnimatable> PlayState basicIdle(AnimationEvent<E> event) {

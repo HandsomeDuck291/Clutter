@@ -16,6 +16,7 @@ import net.minecraft.util.Identifier;
 @Environment(EnvType.CLIENT)
 public class ClutterClient implements ClientModInitializer {
     public static final EntityModelLayer MODEL_FAIRY_LAYER = new EntityModelLayer(new Identifier(Clutter.MOD_ID, "fairy"), "main");
+
     @Override
     public void onInitializeClient() {
         EntityRendererRegistry.register(EntityRegistry.FAIRY, FairyRenderer::new);

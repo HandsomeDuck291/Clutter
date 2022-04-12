@@ -2,7 +2,6 @@ package net.handsomeduck.clutter.client.model;
 
 import net.handsomeduck.clutter.Clutter;
 import net.handsomeduck.clutter.entity.FairyEntity;
-import net.minecraft.client.model.TexturedModelData;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 

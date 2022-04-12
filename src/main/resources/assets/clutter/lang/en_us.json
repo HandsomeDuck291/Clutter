@@ -1,6 +1,8 @@
 {
   "itemGroup.clutter.clutter": "Clutter",
   "item.clutter.ruby": "Ruby",
+  "item.clutter.emptyjar": "Empty Jar",
+  "item.clutter.fulljar": "Fairy Jar",
   "block.clutter.ruby_ore": "Ruby Ore",
   "block.clutter.comp": "Computer",
   "entity.clutter.fairy": "Fairy",

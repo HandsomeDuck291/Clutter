@@ -1,22 +1,32 @@
 package net.handsomeduck.clutter.block;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.handsomeduck.clutter.Clutter;
 import net.handsomeduck.clutter.block.BlockEntity.ComputerEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.item.BlockItem;
-import net.minecraft.util.Identifier;
+import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.state.StateManager;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.util.math.Direction;
+import org.jetbrains.annotations.Nullable;
 
-public class Computer extends Block implements BlockEntityProvider {
+public class Computer extends HorizontalFacingBlock implements BlockEntityProvider {
 
     public Computer() {
         super(AbstractBlock.Settings.of(Material.STONE).nonOpaque());
+        setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }
 
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(Properties.HORIZONTAL_FACING);
+    }
+
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext context) {
+        return this.getDefaultState().with(Properties.HORIZONTAL_FACING, context.getPlayerFacing().getOpposite());
+    }
+
+    @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
         return new ComputerEntity(pos, state);

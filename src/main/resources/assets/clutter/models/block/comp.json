@@ -2,6 +2,6 @@
   "parent": "builtin/entity",
   "textures": {
     "1": "clutter:blockentity/computer/computer",
-    "particle": "clutter:blockentity/computer/computer"
+    "particle": "minecraft:block/redstone_block"
   }
 }

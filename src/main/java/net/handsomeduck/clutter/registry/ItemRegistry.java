@@ -2,6 +2,7 @@ package net.handsomeduck.clutter.registry;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.handsomeduck.clutter.Clutter;
+import net.handsomeduck.clutter.item.Jar;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -19,6 +20,10 @@ public class ItemRegistry {
             new SpawnEggItem(EntityRegistry.FAIRY, 16761035, 65280, new Item.Settings().group(ItemGroup.MISC)));
     public static final Item RUBY = registerItem("ruby",
             new Item(new Item.Settings().group(clutter)));
+    public static final Jar EMPTY_JAR = registerItem("emptyjar",
+            new Jar(new Item.Settings().group(clutter)));
+    public static final Jar FULL_JAR = registerItem("fulljar",
+            new Jar(new Item.Settings().group(clutter)));
     public static final BlockItem COMP = registerItem("comp",
             new BlockItem(BlockRegistry.COMP, new Item.Settings().group(clutter)));
     public static final BlockItem RUBY_ORE = registerItem("ruby_ore",

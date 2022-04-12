@@ -18,7 +18,9 @@ public class FairyRenderer extends GeoEntityRenderer<FairyEntity> {
     }
 
     @Override
-    public RenderLayer getRenderType(FairyEntity animatable, float partialTicks, MatrixStack stack, @Nullable VertexConsumerProvider renderTypeBuffer, @Nullable VertexConsumer vertexBuilder, int packedLightIn, Identifier textureLocation) {
+    public RenderLayer getRenderType(FairyEntity animatable, float partialTicks, MatrixStack stack,
+                                     @Nullable VertexConsumerProvider renderTypeBuffer, @Nullable VertexConsumer vertexBuilder,
+                                     int packedLightIn, Identifier textureLocation) {
         return RenderLayer.getEntityTranslucent(this.getTextureLocation(animatable));
     }
 }
